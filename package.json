@@ -1,6 +1,6 @@
 {
     "name": "stylelint-plugin-styled-components",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A Stylelint plugin for the styled-components Library",
     "main": "src/index.js",
     "keywords": [
