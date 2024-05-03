@@ -1,53 +1,47 @@
 # stylelint-plugin-styled-components
+[![NPM version](https://img.shields.io/npm/v/stylelint-file-max-lines.svg)](https://www.npmjs.com/package/stylelint-file-max-lines)
 
 A [Stylelint] plugin for the styled-components Library
 
 ## Installation
 
 ```sh
-npm install --save-dev stylelint-plugin-styled-components 
+npm install --save-dev stylelint-plugin-styled-components postcss postcss-styled-syntax
 ```
 
 ## Configuration
+Add this config to your `.stylelintrc`:
 
 ```json
 {
-  "plugins": [""]
-}
-```
-
-And then, in the rules:
-
-```json
-{
-  "rules": {
+    "customSyntax": "postcss-styled-syntax",
+    "plugins": ["../stylelint-plugin-styled-components"],
+    "rules": {
+        "plugin/styled-components-enforce-ampersand": true
     }
 }
+
 ```
 
-## Usage
-
-
-
-## Configuration
-
-
-
-## Purpose of Rules 
+## Rules 
 
 ### plugin/styled-components-enforce-ampersand
-- when updating the styled-components from v5 to v6 there are a breaking changes.
+-------------------
+### Usage:
+This rule helps to find all pseudo elements and toast an error in console if this pseudo element does't have ampersand. 
+If you pass the --fix option, it will add the ampersand to all the pseudo elements that don't have it.
+
+### Purpose:
+- when updating the styled-components from v5 to v6 there are a breaking changes. 
 
 ![image](https://github.com/ArkadiK94/stylelint-plugin-styled-components/assets/76536506/d27aa215-3d19-433d-aa95-a15669b2594d)
 Source: https://styled-components.com/docs/faqs#what-do-i-need-to-do-to-migrate-to-v6
 
-The problem is that you will not notice any error on the console when updating to v6. However, the styles will not work as you expected.
+The problem is that you will not notice any error on the console when updating to v6. However, the styles will not work as you expected!
 
-This rule helps to find all pseudo elements and toast an error in console if this pseudo element does't have ampersand.
+## Suggestions 
+If you have any suggestion for new rule to add for better DX for styled-components, you are welcome to open an issue.
 
-
-
-LICENSE - [MIT]
 
 [stylelint]: https://github.com/stylelint/stylelint/
 
