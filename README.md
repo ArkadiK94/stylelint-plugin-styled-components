@@ -40,7 +40,7 @@ Source: https://styled-components.com/docs/faqs#what-do-i-need-to-do-to-migrate-
 The problem is that you will not notice any error on the console when updating to v6. However, the styles will not work as you expected!
 
 ## Suggestions 
-If you have any suggestion for new rule to add for better DX for styled-components, you are welcome to open an issue.
+If you have any suggestion for a new rule to enhance DX when using styled-components library, you are welcome to open an issue.
 
 
 [stylelint]: https://github.com/stylelint/stylelint/
