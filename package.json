@@ -1,0 +1,14 @@
+{
+    "name": "stylelint-plugin-styled-components",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "module",
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "stylelint": "^16.3.1"
+    }
+}
