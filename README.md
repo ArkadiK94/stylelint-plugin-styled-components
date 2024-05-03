@@ -48,4 +48,8 @@ The problem is that you will not notice any error on the console when updating t
 
 If you have any suggestion for a new rule to enhance DX when using styled-components library, you are welcome to open an issue.
 
+## Known Issues Realated to postcss-styled-syntax Library
+![image](https://github.com/ArkadiK94/stylelint-plugin-styled-components/assets/76536506/517e7b72-e536-4772-bd66-5ec56d99bdf6)
+
+
 [stylelint]: https://github.com/stylelint/stylelint/
